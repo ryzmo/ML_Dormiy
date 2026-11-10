@@ -1,0 +1,29 @@
+# Git Ignore untuk Smart Inventory System & Machine Learning Pipeline
+# Mencegah file bobot model besar (>100MB) atau arsip ter-push ke GitHub
+
+# 1. Arsip & Dataset Mentah Besar
+*.zip
+*.tar.gz
+*.rar
+*.parquet
+
+# 2. File Bobot Model / Weights
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# 3. Environment & Checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+*.log
+
+# 4. Large model directories (jika ingin exclude folder model hasil training)
+# models/sbert_finetuned/model.safetensors
+
